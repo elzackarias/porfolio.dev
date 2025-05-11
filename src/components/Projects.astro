@@ -4,6 +4,8 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import React from "./icons/React.astro"
+import PHP from "./icons/PHP.astro"
 
 const TAGS = {
   NEXT: {
@@ -16,16 +18,25 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#003159] text-white",
+    icon: PHP,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "PulPOS - POS para restaurantes",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
+      "Un POS para restaurantes, cafeterías y bares. Con gestión de mesas, pedidos, inventario y más. Desarrollado con React, Tailwind y PHP.",
     github: "https://github.com/pheralb/svgl",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.PHP, TAGS.REACT, TAGS.TAILWIND],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
